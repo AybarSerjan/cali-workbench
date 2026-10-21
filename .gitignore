@@ -1,0 +1,44 @@
+# Local credentials and environments
+.env
+.env.*
+!.env.example
+.venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.log
+*.bak
+
+# Local engineering inputs, knowledge, databases, and runtime outputs
+/raw/
+/data/
+/memory/
+/wiki/
+/outputs/
+*.db
+*.db-*
+*.sqlite*
+*.mf4
+*.mdf
+*.dat
+*.a2l
+*.hex
+!examples/synthetic/measurements/*.mf4
+!examples/synthetic/*.a2l
+
+# Demo runtime and UI build artifacts
+/demo/generated/
+/.demo-workspace*/
+/frontend/dist/
+*.tsbuildinfo
+/frontend/vite.config.js
+/frontend/vite.config.d.ts
+
+# Local editor and analysis artifacts
+.claude/
+.agents/
+.understand-anything/
+graphify-out/
+.playwright-mcp/

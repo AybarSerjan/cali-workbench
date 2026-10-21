@@ -1,0 +1,3 @@
+* text=auto eol=lf
+*.mf4 binary
+*.a2l text eol=lf

@@ -1,0 +1,29 @@
+{
+  "synthetic": true,
+  "contains_real_measurements": false,
+  "contains_real_calibration": false,
+  "samples_per_file": 601,
+  "duration_s": 60.0,
+  "sample_rate_hz": 10,
+  "measurement_files": 9,
+  "channels_per_file": 6,
+  "reproducibility": "Signal values and scenario definitions are deterministic; MF4 write-history timestamps may vary.",
+  "files": {
+    "expected.json": "5aa8d4c91e4c68fd9d3c1b2469034dd340fac776ec96dc147f0c49f364798676",
+    "measurements/SYNTHETIC_N10_RL20.mf4": "6cafb6b746bf4f22d211b781c5330a385e1e570e78c062f78e3819ba77057fe8",
+    "measurements/SYNTHETIC_N10_RL50.mf4": "0092ef3fe5f651403770f7931dba7548f7fbd4c8ffa41a423f207d31cd3f4532",
+    "measurements/SYNTHETIC_N10_RL80.mf4": "55a3056693127deaca1dabd1517408e955e99b2c9f7e365359dd338f390b4120",
+    "measurements/SYNTHETIC_N20_RL20.mf4": "9c9630c532c4c620909977458cb9b22b8a795fe2d4caeee62aaa64a1602dbb25",
+    "measurements/SYNTHETIC_N20_RL50.mf4": "0b636298f188c0f87ab6fa707df91a128ed82861ce07fb3252bbc673db0f7feb",
+    "measurements/SYNTHETIC_N20_RL80.mf4": "3801395c5a81c668da116676c3171a38418a311e9bcee52b92d27864b304d395",
+    "measurements/SYNTHETIC_N30_RL20.mf4": "b864070722151253eb526aca96ad38e1e83290f824fea91b6df1e1c2d20dca15",
+    "measurements/SYNTHETIC_N30_RL50.mf4": "e093f17f746d468931d4ff48eec7ba38e499b00d32173e85541cdd0a8c56c43c",
+    "measurements/SYNTHETIC_N30_RL80.mf4": "d918433d0bd2d1d896d92d62e0d1e8634b0e2d7a9ebdd91393f4071c58a59320",
+    "mf4_pipeline_config.json": "de525885657bb075b5e7c402b4a4e71bbfbd5de27f617e7395010bd7a41166ef",
+    "obfcm_analysis.json": "373d36a75b2215207785c59e2a36e98882c1742b99105bfd50fe7cdb31f73a47",
+    "obfcm_summary.json": "57fa81295e511d9cf19ee44dccb61e1a3f1f421bfaae6843242678a4161933f1",
+    "synthetic_measurements.a2l": "8dab21ae4634caa56567afd817e4ba9f4f123ccdc7210e2200dc5c2941b4a4ab",
+    "synthetic_source.md": "bdd71fd3f446a0e717e8336a436969d9d0241964362e418552a4860047573db9",
+    "workpackage.json": "626d37684165b9cd154ac2306b456b53c465d9b421eae06fdc748758d31ff2b5"
+  }
+}

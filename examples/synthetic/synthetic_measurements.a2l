@@ -1,0 +1,13 @@
+ASAP2_VERSION 1 71
+/begin PROJECT SYNTHETIC "Synthetic demo only"
+/begin MODULE DEMO "No ECU or vehicle association"
+/begin MOD_COMMON "" BYTE_ORDER MSB_LAST /end MOD_COMMON
+/begin COMPU_METHOD IDENTITY "" IDENTICAL "%8.3" "" /end COMPU_METHOD
+/begin MEASUREMENT engine_rpm "Synthetic engine speed" FLOAT32_IEEE IDENTITY 1 0 -100000 100000 /end MEASUREMENT
+/begin MEASUREMENT engine_load "Synthetic load" FLOAT32_IEEE IDENTITY 1 0 -100000 100000 /end MEASUREMENT
+/begin MEASUREMENT lambda_actual "Synthetic measured lambda" FLOAT32_IEEE IDENTITY 1 0 -100000 100000 /end MEASUREMENT
+/begin MEASUREMENT lambda_target "Synthetic requested lambda" FLOAT32_IEEE IDENTITY 1 0 -100000 100000 /end MEASUREMENT
+/begin MEASUREMENT coolant_temp "Synthetic coolant temperature" FLOAT32_IEEE IDENTITY 1 0 -100000 100000 /end MEASUREMENT
+/begin MEASUREMENT fuel_rate "Synthetic fuel rate; toy formula" FLOAT32_IEEE IDENTITY 1 0 -100000 100000 /end MEASUREMENT
+/end MODULE
+/end PROJECT

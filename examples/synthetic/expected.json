@@ -1,0 +1,59 @@
+{
+  "synthetic": true,
+  "measurements": [
+    {
+      "file": "measurements/SYNTHETIC_N10_RL20.mf4",
+      "expected_verdict": "PASS",
+      "expected_anomaly_window_s": null
+    },
+    {
+      "file": "measurements/SYNTHETIC_N10_RL50.mf4",
+      "expected_verdict": "PASS",
+      "expected_anomaly_window_s": null
+    },
+    {
+      "file": "measurements/SYNTHETIC_N10_RL80.mf4",
+      "expected_verdict": "PASS",
+      "expected_anomaly_window_s": null
+    },
+    {
+      "file": "measurements/SYNTHETIC_N20_RL20.mf4",
+      "expected_verdict": "PASS",
+      "expected_anomaly_window_s": null
+    },
+    {
+      "file": "measurements/SYNTHETIC_N20_RL50.mf4",
+      "expected_verdict": "FAIL",
+      "expected_anomaly_window_s": [
+        20.0,
+        24.0
+      ]
+    },
+    {
+      "file": "measurements/SYNTHETIC_N20_RL80.mf4",
+      "expected_verdict": "PASS",
+      "expected_anomaly_window_s": null
+    },
+    {
+      "file": "measurements/SYNTHETIC_N30_RL20.mf4",
+      "expected_verdict": "PASS",
+      "expected_anomaly_window_s": null
+    },
+    {
+      "file": "measurements/SYNTHETIC_N30_RL50.mf4",
+      "expected_verdict": "PASS",
+      "expected_anomaly_window_s": null
+    },
+    {
+      "file": "measurements/SYNTHETIC_N30_RL80.mf4",
+      "expected_verdict": "PASS",
+      "expected_anomaly_window_s": null
+    }
+  ],
+  "obfcm": {
+    "total_distance_km": 40.0,
+    "bag_cumulative_L": 2.4,
+    "obfcm_cumulative_L": 2.352,
+    "accuracy_percent": 2.0
+  }
+}

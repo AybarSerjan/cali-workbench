@@ -1,0 +1,85 @@
+{
+  "data_cleaning": {
+    "trim_start": 5.0,
+    "trim_end": 5.0,
+    "min_duration": 10.0,
+    "realign": true
+  },
+  "statistics": {
+    "default_metrics": [
+      "mean",
+      "max",
+      "min",
+      "std",
+      "median"
+    ],
+    "signals": {
+      "engine_rpm": {
+        "description": "Synthetic engine speed",
+        "unit": "rpm"
+      },
+      "engine_load": {
+        "description": "Synthetic load",
+        "unit": "%"
+      },
+      "lambda_actual": {
+        "description": "Synthetic measured lambda",
+        "unit": ""
+      },
+      "lambda_target": {
+        "description": "Synthetic requested lambda",
+        "unit": ""
+      },
+      "coolant_temp": {
+        "description": "Synthetic coolant temperature",
+        "unit": "degC"
+      },
+      "fuel_rate": {
+        "description": "Synthetic fuel rate; toy formula",
+        "unit": "L/h"
+      }
+    },
+    "calculated_signals": {
+      "lambda_error": {
+        "description": "Toy lambda difference",
+        "unit": "",
+        "formula": "lambda_actual - lambda_target",
+        "dependencies": [
+          "lambda_actual",
+          "lambda_target"
+        ]
+      }
+    }
+  },
+  "visualization": {
+    "heatmap": {
+      "enabled": true,
+      "x_axis": "rpm",
+      "y_axis": "load",
+      "rpm_bins": [
+        500,
+        1500,
+        2500,
+        3500
+      ],
+      "load_bins": [
+        5,
+        35,
+        65,
+        95
+      ],
+      "color_metric": "max",
+      "cmap": "viridis"
+    }
+  },
+  "output": {
+    "summary_excel": true,
+    "individual_csv": true,
+    "error_log": true,
+    "metadata": {
+      "project": "SYNTHETIC_DEMO",
+      "vehicle": "SYNTHETIC_ONLY",
+      "user": "SYNTHETIC_DEMO"
+    }
+  }
+}

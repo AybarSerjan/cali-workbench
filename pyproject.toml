@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cali-workbench"
+version = "0.1.0"
+license = {file = "LICENSE"}
+description = "Local, auditable multi-agent knowledge and calibration data platform"
+requires-python = ">=3.12"
+dependencies = [
+  "alembic>=1.14,<2",
+  "asammdf>=7,<9",
+  "fastapi>=0.115,<1",
+  "httpx>=0.27,<1",
+  "langgraph>=0.3,<2",
+  "langgraph-checkpoint-sqlite>=2,<4",
+  "markitdown[pdf,docx,pptx,xlsx,xls,outlook,youtube-transcription]>=0.1,<1",
+  "openpyxl>=3.1,<4",
+  "pydantic-settings>=2.7,<3",
+  "pypdf>=5,<7",
+  "python-multipart>=0.0.20,<1",
+  "python-pptx>=1.0,<2",
+  "pyyaml>=6,<7",
+  "scipy>=1.10,<2",
+  "sqlalchemy>=2.0,<3",
+  "uvicorn[standard]>=0.34,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "pytest-asyncio>=0.25,<2"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["backend", "agent"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+

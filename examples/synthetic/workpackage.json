@@ -1,0 +1,27 @@
+{
+  "wp_code": "DEMO-LAMBDA",
+  "title": "SYNTHETIC: detect a deliberately injected lambda offset",
+  "definition": {
+    "description": "Toy rule and entirely synthetic inputs; not valid for real engineering decisions.",
+    "signals": [
+      {
+        "a2l_name": "lambda_actual",
+        "match_status": "confirmed"
+      },
+      {
+        "a2l_name": "lambda_target",
+        "match_status": "confirmed"
+      }
+    ],
+    "scenario_gate": "lambda_target > 0.5",
+    "criteria": [
+      {
+        "id": "synthetic-offset",
+        "expression": "abs(lambda_actual - lambda_target) > 0.05",
+        "min_duration_s": 0.5,
+        "threshold_source": "SYNTHETIC_DEMO_ONLY"
+      }
+    ]
+  },
+  "created_by": "user"
+}

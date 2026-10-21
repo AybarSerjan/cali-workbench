@@ -1,0 +1,18 @@
+{
+  "synthetic": true,
+  "Phase_Results": {
+    "Distance_Phase1_km": 10.0,
+    "Distance_Phase2_km": 10.0,
+    "Distance_Phase3_km": 10.0,
+    "Distance_Phase4_km": 10.0
+  },
+  "Emissions": {
+    "fuel_consumption": {
+      "phase1_FC_Bag_L_per_100km": 6.0,
+      "phase2_FC_Bag_L_per_100km": 6.0,
+      "phase3_FC_Bag_L_per_100km": 6.0,
+      "phase4_FC_Bag_L_per_100km": 6.0,
+      "Total_FC_Bag_L_per_100km": 6.0
+    }
+  }
+}

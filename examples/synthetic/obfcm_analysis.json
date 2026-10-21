@@ -1,0 +1,11 @@
+{
+  "synthetic": true,
+  "initial_final_delta": {
+    "engine_fuel_cumulative": {
+      "initial": 0.0,
+      "final": 2.352,
+      "delta": 2.352,
+      "channel": "synthetic_fuel_total"
+    }
+  }
+}
